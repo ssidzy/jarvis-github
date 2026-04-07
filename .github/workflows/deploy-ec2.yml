@@ -1,0 +1,44 @@
+name: Deploy Backend to EC2
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'server.ts'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'email_templates/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/jarvis
+            
+            # Pull latest changes
+            git fetch origin main
+            git reset --hard origin/main
+            
+            # Install dependencies
+            npm ci --omit=dev
+            
+            # Restart application
+            pm2 restart jarvis-api
+            
+            # Health check
+            sleep 3
+            curl -f http://localhost:3000/api/templates || exit 1
+            
+            echo "✅ Deployment successful!"

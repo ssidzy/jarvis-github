@@ -1,0 +1,10 @@
+{
+  "id": "urgent_issue",
+  "name": "Urgent Issue Alert",
+  "category": "critical",
+  "description": "Urgent issue communication with clear action plan",
+  "subject": "URGENT: [Issue Description]",
+  "body": "Hi [Name],\n\nI'm writing to alert you to a critical issue that requires immediate attention:\n\n**Issue:** [Issue Description]\n**Impact:** [Business Impact]\n**Severity:** HIGH\n**Time Sensitivity:** [Urgency Level]\n\n**What Happened:**\n[Root Cause]\n\n**Current Status:**\n[Current Status]\n\n**Actions Taken So Far:**\n✓ [Action 1]\n✓ [Action 2]\n✓ [Action 3]\n\n**Immediate Next Steps:**\n1. [Immediate Step 1] - [Timeline]\n2. [Immediate Step 2] - [Timeline]\n3. [Immediate Step 3] - [Timeline]\n\n**What We Need From You:**\n→ [Required Input/Decision]\n→ [Required Resource]\n→ [Required Approval]\n\n**Point of Contact:** [Your Name] - [Contact]\n**Est. Resolution Time:** [Timeframe]\n\nI'm standing by and will provide updates every [Frequency].\n\nBest regards,\n[Your Name]",
+  "keywords": ["critical", "urgent", "immediate", "resolution", "action"],
+  "variables": ["Name", "Issue Description", "Business Impact", "Urgency Level", "Root Cause", "Current Status", "Action 1", "Action 2", "Action 3", "Immediate Step 1", "Timeline", "Immediate Step 2", "Timeline", "Immediate Step 3", "Timeline", "Required Input/Decision", "Required Resource", "Required Approval", "Your Name", "Contact", "Timeframe", "Frequency"]
+}

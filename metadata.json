@@ -1,0 +1,5 @@
+{
+  "name": "Jarvis",
+  "description": "A privacy-first, local AI email drafting application with a macOS-inspired aesthetic and file-based context retrieval.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "username": "sandesh",
+      "fullName": "Sandesh",
+      "designation": "Software Engineer",
+      "department": "Engineering",
+      "company": "Your Company",
+      "email": "sandesh@company.com",
+      "passwordHash": "$2b$10$O56Vz9C/WOBhWCIBFWGPqOtA9qlaY2o9dtw/y4EjHqHXjHcvbRsEC"
+    },
+    {
+      "username": "siddarth",
+      "fullName": "Siddarth",
+      "designation": "Developer",
+      "department": "Technology",
+      "company": "Your Company",
+      "email": "siddarth@company.com",
+      "passwordHash": "$2b$10$4oIxxX0U.7K3jhlk9IqmFuHBQSEGD2z9ry55gPKN0tNOex4QBKApO"
+    },
+    {
+      "username": "yashas",
+      "fullName": "Yashas",
+      "designation": "Analyst",
+      "department": "Operations",
+      "company": "Your Company",
+      "email": "yashas@company.com",
+      "passwordHash": "$2b$10$VLkCyJ.vZAGRCGfFT4hHHeZ/kRTxt1Y/Wub9xTXCqjjW3mU9YcpL6"
+    },
+    {
+      "username": "sonali",
+      "fullName": "Sonali",
+      "designation": "Manager",
+      "department": "Operations",
+      "company": "Your Company",
+      "email": "sonali@company.com",
+      "passwordHash": "$2b$10$nwgQifLMxNatkr/crK5RguKBfZMjSve2vbZxx/bsZRCC7LnBiY76S"
+    }
+  ]
+}

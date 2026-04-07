@@ -1,0 +1,10 @@
+{
+  "id": "follow_up",
+  "name": "Follow Up",
+  "category": "professional",
+  "description": "Professional follow-up with urgency and action",
+  "subject": "Follow-Up: [Previous Topic]",
+  "body": "Hi [Name],\n\nI wanted to reach out and follow up on our previous conversation regarding [Previous Topic].\n\nAs discussed, [Brief Summary] is critical for [Objective]. I believe we can move forward efficiently by [Next Action].\n\nTo keep momentum, I propose we:\n• [Action 1] by [Date 1]\n• [Action 2] by [Date 2]\n• [Action 3] by [Date 3]\n\nWould this timeline work for your team?\n\nI'm excited about the potential here and look forward to your thoughts.\n\nBest regards,\n[Your Name]",
+  "keywords": ["momentum", "critical", "propose", "efficient", "potential"],
+  "variables": ["Name", "Previous Topic", "Brief Summary", "Objective", "Next Action", "Action 1", "Date 1", "Action 2", "Date 2", "Action 3", "Date 3", "Your Name"]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "project_proposal",
+  "name": "Project Proposal",
+  "category": "business",
+  "description": "Compelling project proposal with ROI emphasis",
+  "subject": "Project Proposal: [Project Name]",
+  "body": "Hi [Name],\n\nI'm reaching out to propose a strategic initiative that could drive measurable results for [Company].\n\n**Project:** [Project Name]\n**Objective:** [Objective]\n**Expected ROI:** [ROI/Benefit]\n\n**Why This Matters:**\n[Rationale]\n\n**Proposed Timeline:**\nPhase 1: [Phase 1 Details] - [Date]\nPhase 2: [Phase 2 Details] - [Date]\nPhase 3: [Phase 3 Details] - [Date]\n\n**Resource Requirements:**\n• [Resource 1]\n• [Resource 2]\n• [Resource 3]\n\n**Success Metrics:**\n✓ [Metric 1]\n✓ [Metric 2]\n✓ [Metric 3]\n\nI'd love to discuss this further and answer any questions. Would you be available for a brief call this week?\n\nBest regards,\n[Your Name]",
+  "keywords": ["strategic", "measurable", "ROI", "initiative", "deliverable", "success metrics"],
+  "variables": ["Name", "Company", "Project Name", "Objective", "ROI/Benefit", "Rationale", "Phase 1 Details", "Date", "Phase 2 Details", "Date", "Phase 3 Details", "Date", "Resource 1", "Resource 2", "Resource 3", "Metric 1", "Metric 2", "Metric 3", "Your Name"]
+}

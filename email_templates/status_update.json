@@ -1,0 +1,10 @@
+{
+  "id": "status_update",
+  "name": "Status Update",
+  "category": "professional",
+  "description": "Regular status update with clear progress tracking",
+  "subject": "Status Update: [Project/Initiative Name]",
+  "body": "Hi [Name],\n\nI wanted to provide you with a comprehensive update on [Project/Initiative Name].\n\n**Progress to Date:**\n✓ [Completed Item 1]\n✓ [Completed Item 2]\n✓ [Completed Item 3]\n\n**Current Focus:**\n→ [Current Item 1]\n→ [Current Item 2]\n→ [Current Item 3]\n\n**Timeline:**\n[Item 1] - 90% complete, on track for [Date]\n[Item 2] - 60% complete, on track for [Date]\n[Item 3] - 30% complete, on track for [Date]\n\n**Blockers/Risks:**\n[Issue/Risk]: [Mitigation Strategy]\n\n**Next Steps:**\n1. [Action 1] - Expected completion [Date]\n2. [Action 2] - Expected completion [Date]\n3. [Action 3] - Expected completion [Date]\n\nEverything is proceeding on schedule. I'll provide the next update on [Frequency].\n\nBest regards,\n[Your Name]",
+  "keywords": ["progress", "on track", "comprehensive", "completion", "mitigation"],
+  "variables": ["Name", "Project/Initiative Name", "Completed Item 1", "Completed Item 2", "Completed Item 3", "Current Item 1", "Current Item 2", "Current Item 3", "Item 1", "Date", "Item 2", "Date", "Item 3", "Date", "Issue/Risk", "Mitigation Strategy", "Action 1", "Date", "Action 2", "Date", "Action 3", "Date", "Frequency", "Your Name"]
+}

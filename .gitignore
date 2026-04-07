@@ -1,0 +1,23 @@
+node_modules/
+build/
+dist/
+dist-server/
+coverage/
+.DS_Store
+*.log
+
+# Environment files
+.env
+.env.local
+!.env.example
+!.env.production
+
+# AWS
+.aws/
+
+# Sessions (contains auth tokens)
+sessions.json
+
+# Backups
+*.backup.json
+*.old.tsx

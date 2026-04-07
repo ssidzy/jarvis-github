@@ -1,0 +1,10 @@
+{
+  "id": "meeting_request",
+  "name": "Meeting Request",
+  "category": "professional",
+  "description": "Request a meeting with clear value proposition",
+  "subject": "Meeting Request: [Topic]",
+  "body": "Hi [Name],\n\nI hope this email finds you well. I would like to schedule a meeting to discuss [Topic], as I believe it could deliver significant value to [Company/Team].\n\nWould you be available on [Date] at [Time]? I'm flexible and happy to work around your schedule.\n\nKey points I'd like to cover:\n• [Point 1]\n• [Point 2]\n• [Point 3]\n\nLooking forward to connecting.\n\nBest regards,\n[Your Name]",
+  "keywords": ["significant", "value", "propose", "collaborate", "opportunity"],
+  "variables": ["Name", "Topic", "Company/Team", "Date", "Time", "Point 1", "Point 2", "Point 3", "Your Name"]
+}
