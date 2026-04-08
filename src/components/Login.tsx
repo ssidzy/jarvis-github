@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { AlertCircle } from 'lucide-react';
-import axios from 'axios';
+import api from '../lib/api';
 import DarkVeil from './DarkVeil';
 
 interface LoginProps {
@@ -20,7 +20,7 @@ export function Login({ onLogin }: LoginProps) {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('/api/auth/login', { username, password });
+      const response = await api.post('/api/auth/login', { username, password });
       const { token, username: returnedUsername } = response.data;
       onLogin(returnedUsername, token);
     } catch (error: any) {

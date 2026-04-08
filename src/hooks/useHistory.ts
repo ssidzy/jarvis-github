@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import axios from 'axios';
+import api from '../lib/api';
 import type { HistoryItem, ViewingEmail } from '../types/email';
 
 export function useHistory() {
@@ -12,7 +12,7 @@ export function useHistory() {
   const fetchHistory = useCallback(async () => {
     try {
       setIsLoading(true);
-      const res = await axios.get('/api/history');
+      const res = await api.get('/api/history');
       setHistory(res.data);
     } catch {
       console.error('Failed to fetch history');
@@ -24,7 +24,7 @@ export function useHistory() {
   const searchByDate = useCallback(async (date: string) => {
     setSelectedDate(date);
     try {
-      const res = await axios.get(`/api/search?date=${date}`);
+      const res = await api.get(`/api/search?date=${date}`);
       setSearchResults(res.data);
     } catch {
       console.error('Search failed');
@@ -33,7 +33,7 @@ export function useHistory() {
 
   const searchByKeyword = useCallback(async (keyword: string) => {
     try {
-      const res = await axios.get(`/api/search?keyword=${encodeURIComponent(keyword)}`);
+      const res = await api.get(`/api/search?keyword=${encodeURIComponent(keyword)}`);
       setSearchResults(res.data);
     } catch {
       console.error('Search failed');
@@ -42,7 +42,7 @@ export function useHistory() {
 
   const searchByTag = useCallback(async (tag: string) => {
     try {
-      const res = await axios.get(`/api/search?tag=${encodeURIComponent(tag)}`);
+      const res = await api.get(`/api/search?tag=${encodeURIComponent(tag)}`);
       setSearchResults(res.data);
     } catch {
       console.error('Search failed');
@@ -51,7 +51,7 @@ export function useHistory() {
 
   const viewEmail = useCallback(async (date: string, filename: string): Promise<boolean> => {
     try {
-      const res = await axios.get(`/api/email/${encodeURIComponent(date)}/${encodeURIComponent(filename)}`);
+      const res = await api.get(`/api/email/${encodeURIComponent(date)}/${encodeURIComponent(filename)}`);
       setViewingEmail(res.data);
       return true;
     } catch {

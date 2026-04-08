@@ -24,17 +24,12 @@ import {
   ClipboardCopy
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import axios from 'axios';
+import api from './lib/api';
 import { Calendar } from './components/Calendar';
 import { Login } from './components/Login';
 import { Dashboard } from './components/Dashboard';
 import { ComingSoon } from './components/ComingSoon';
 import { useAuth, useEmail, useHistory } from './hooks';
-
-// ── API base URL ───────────────────────────────────────────────────────────────
-const API_BASE = (import.meta as any).env?.VITE_API_BASE_URL
-  ?? (process.env.VITE_API_BASE_URL || '');
-axios.defaults.baseURL = API_BASE;
 
 export default function App() {
   // Hooks

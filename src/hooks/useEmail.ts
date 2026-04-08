@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import axios from 'axios';
+import api from '../lib/api';
 import type { StatusMessage, Template } from '../types/email';
 
 interface EmailState {
@@ -49,7 +49,7 @@ export function useEmail(options: UseEmailOptions = {}) {
 
   const fetchTemplates = useCallback(async () => {
     try {
-      const res = await axios.get('/api/templates');
+      const res = await api.get('/api/templates');
       setTemplates(res.data);
     } catch {
       console.error('Failed to fetch templates');
@@ -66,12 +66,12 @@ export function useEmail(options: UseEmailOptions = {}) {
 
     try {
       // Fetch context first
-      const contextRes = await axios.get(`/api/context?query=${encodeURIComponent(promptToUse)}`);
+      const contextRes = await api.get(`/api/context?query=${encodeURIComponent(promptToUse)}`);
       const retrievedContext = contextRes.data.context;
       setState(s => ({ ...s, context: retrievedContext }));
 
       // Generate email
-      const genRes = await axios.post('/api/generate', {
+      const genRes = await api.post('/api/generate', {
         prompt: promptToUse,
         context: retrievedContext,
         templateType: selectedTemplateStyle,
@@ -106,7 +106,7 @@ export function useEmail(options: UseEmailOptions = {}) {
     }
 
     try {
-      await axios.post('/api/save', {
+      await api.post('/api/save', {
         subject: state.subject,
         content: state.draft,
         tags: state.tags,

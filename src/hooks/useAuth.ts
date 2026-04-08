@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../lib/api';
 
 interface AuthState {
   currentUser: string | null;
@@ -16,9 +16,9 @@ export function useAuth() {
 
   useEffect(() => {
     if (state.authToken) {
-      axios.defaults.headers.common['Authorization'] = `Bearer ${state.authToken}`;
+      api.defaults.headers.common['Authorization'] = `Bearer ${state.authToken}`;
     } else {
-      delete axios.defaults.headers.common['Authorization'];
+      delete api.defaults.headers.common['Authorization'];
     }
   }, [state.authToken]);
 
@@ -30,7 +30,7 @@ export function useAuth() {
 
   const logout = async () => {
     try {
-      await axios.post('/api/auth/logout');
+      await api.post('/api/auth/logout');
     } catch {
       // Ignore logout errors
     }
